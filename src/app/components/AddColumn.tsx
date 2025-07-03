@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { useBoard } from "../context/BoardContext";
 
@@ -20,7 +19,7 @@ export default function AddColumn() {
         <input
           value={title}
           onChange={(e) => setTitle(e.target.value)}
-          className="w-full px-2 py-1 border rounded"
+          className="w-full px-2 py-1 border rounded text-black placeholder-gray-500"
           placeholder="Add column"
         />
       </form>
