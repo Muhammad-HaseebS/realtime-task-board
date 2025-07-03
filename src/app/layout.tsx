@@ -1,20 +1,19 @@
-import { BoardProvider } from './context/BoardContext';
-import './globals.css';
-import { Inter } from 'next/font/google';
+// layout.tsx
+import "./globals.css";
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ["latin"] });
 
-export const metadata = {
-  title: 'Realtime Task Board',
-  description: 'Built with Next.js, Socket.IO, and Tailwind CSS',
+export const metadata: Metadata = {
+  title: "Task Board",
+  description: "Trello-style task board",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <BoardProvider>{children}</BoardProvider>
-      </body>
+      <body className={`${inter.className} bg-gray-50 text-gray-900`}>{children}</body>
     </html>
   );
 }

@@ -6,7 +6,7 @@ type CardProps = {
 
 export default function Card({ title }: CardProps) {
   return (
-    <div className="bg-white p-2 rounded shadow hover:shadow-md transition-shadow">
+    <div className="bg-gray-100 p-3 rounded shadow-sm hover:shadow-md transition duration-200 text-sm text-gray-800">
       {title}
     </div>
   );
