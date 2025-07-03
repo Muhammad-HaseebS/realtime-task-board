@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useBoard } from "@/app/context/BoardContext";
-import { LuPencil, LuTrash2 } from "react-icons/lu"; // Lucide icons from react-icons
+import { LuPencil, LuTrash2 } from "react-icons/lu"; 
 
 type CardProps = {
   title: string;
